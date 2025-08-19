@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Team Tasks – Sign in</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="center">
+    <div class="card auth-box">
+      <div class="header">
+        <h2>Team Tasks</h2>
+      </div>
+      <div class="section">
+        <div class="kit">
+          <button id="tab-login" class="btn btn-outline">Login</button>
+          <button id="tab-signup" class="btn btn-primary">Sign up</button>
+        </div>
+      </div>
+      <div class="section" id="signup-section">
+        <div class="grid">
+          <label>Full Name
+            <input class="input" id="su-name" placeholder="Jane Doe" />
+          </label>
+          <label>Email
+            <input class="input" id="su-email" placeholder="jane@startup.com" />
+          </label>
+          <label>Password
+            <input class="input" id="su-pass" type="password" placeholder="••••••••" />
+          </label>
+          <button class="btn btn-primary" id="signup-btn">Create account</button>
+        </div>
+        <p class="small">Already have an account? <a href="#" id="goto-login" class="link">Login</a></p>
+      </div>
+      <div class="section" id="login-section" style="display:none">
+        <div class="grid">
+          <label>Email
+            <input class="input" id="li-email" placeholder="jane@startup.com" />
+          </label>
+          <label>Password
+            <input class="input" id="li-pass" type="password" placeholder="••••••••" />
+          </label>
+          <button class="btn btn-primary" id="login-btn">Login</button>
+        </div>
+        <p class="small">New here? <a href="#" id="goto-signup" class="link">Create an account</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="utils.js"></script>
+  <script src="data.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
